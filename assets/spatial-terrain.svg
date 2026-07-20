@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Spatial analysis terrain map</title>
+  <desc id="desc">A stylized terrain map with contour lines, grid layers, and labels for SDImax, FST, RGT, and new products.</desc>
+  <defs>
+    <radialGradient id="hillA" cx="27%" cy="30%" r="42%">
+      <stop offset="0" stop-color="#5f8c53"/>
+      <stop offset=".46" stop-color="#263f31"/>
+      <stop offset="1" stop-color="#07120e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hillB" cx="73%" cy="54%" r="48%">
+      <stop offset="0" stop-color="#315f58"/>
+      <stop offset=".45" stop-color="#17342f"/>
+      <stop offset="1" stop-color="#07120e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10221b"/>
+      <stop offset=".48" stop-color="#07110e"/>
+      <stop offset="1" stop-color="#030706"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0v96" fill="none" stroke="#7aa967" stroke-opacity=".16" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#wash)"/>
+  <rect width="1600" height="1000" fill="url(#hillA)"/>
+  <rect width="1600" height="1000" fill="url(#hillB)"/>
+  <rect width="1600" height="1000" fill="url(#grid)" opacity=".76" transform="skewX(-18) translate(220 0)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M-40 238C154 188 272 220 404 279c176 78 314 72 483-16 204-106 346-86 522 24 78 49 147 67 231 54" stroke="#e5e9c2" stroke-opacity=".28" stroke-width="5"/>
+    <path d="M-30 332c208-65 358-17 496 62 121 69 256 65 411-22 230-130 419-88 590 31 64 45 121 62 180 51" stroke="#b8d393" stroke-opacity=".25" stroke-width="3"/>
+    <path d="M-48 433c135-35 251-22 347 40 182 118 345 124 536 17 244-137 449-101 637 27 71 48 129 58 175 44" stroke="#f1b300" stroke-opacity=".22" stroke-width="3"/>
+    <path d="M-56 546c175-40 316-13 455 80 145 97 301 83 480-35 222-146 454-113 640 9 63 42 109 53 151 43" stroke="#cdddb2" stroke-opacity=".21" stroke-width="4"/>
+    <path d="M-80 663c236-86 396-21 543 81 137 95 281 83 437-25 213-147 409-125 627 11 49 31 98 39 147 31" stroke="#80b067" stroke-opacity=".26" stroke-width="3"/>
+    <path d="M-58 779c197-52 356-9 521 86 142 82 281 78 445-19 228-134 433-107 631 8 57 33 100 39 141 28" stroke="#d6e6be" stroke-opacity=".19" stroke-width="4"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" filter="url(#glow)">
+    <g transform="translate(368 306)">
+      <circle r="18" fill="#f1b300"/>
+      <circle r="39" fill="none" stroke="#f1b300" stroke-width="3" opacity=".8"/>
+      <text x="56" y="9" fill="#f7f3dd" font-size="34">SDImax</text>
+    </g>
+    <g transform="translate(1034 414)">
+      <circle r="18" fill="#7aa967"/>
+      <circle r="39" fill="none" stroke="#7aa967" stroke-width="3" opacity=".8"/>
+      <text x="56" y="9" fill="#f7f3dd" font-size="34">FST</text>
+    </g>
+    <g transform="translate(770 664)">
+      <circle r="18" fill="#5ba3d0"/>
+      <circle r="39" fill="none" stroke="#5ba3d0" stroke-width="3" opacity=".8"/>
+      <text x="56" y="9" fill="#f7f3dd" font-size="34">RGT</text>
+    </g>
+    <g transform="translate(1215 706)">
+      <circle r="18" fill="#e76f51"/>
+      <circle r="39" fill="none" stroke="#e76f51" stroke-width="3" opacity=".8"/>
+      <text x="56" y="9" fill="#f7f3dd" font-size="34">New Products</text>
+    </g>
+  </g>
+  <rect width="1600" height="1000" fill="#020706" opacity=".28"/>
+</svg>
