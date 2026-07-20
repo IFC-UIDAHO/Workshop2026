@@ -368,6 +368,15 @@
       font-size: 21px;
       line-height: 1.2;
     }
+    a.fact, a.pill { text-decoration: none; color: inherit; cursor: pointer; }
+    a.fact { display: block; }
+    .fact-note {
+      display: block;
+      margin-top: 8px;
+      font-style: normal;
+      font-size: 12px;
+      color: var(--muted);
+    }
 
     .ticker {
       position: relative;
@@ -1080,10 +1089,10 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             9 AM - Noon PT
           </div>
-          <div class="pill">
+          <a class="pill" href="https://uidaho.zoom.us/j/88930109335" target="_blank" rel="noopener" title="Join Zoom Meeting - ID: 889 3010 9335, Passcode: 960232">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             Live Online via Zoom
-          </div>
+          </a>
           <div class="pill">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             Passcode: IFC
@@ -1112,7 +1121,7 @@
       <div class="shell fact-grid">
         <div class="fact" data-reveal><span>Dates</span><strong>Aug 4-6, 2026</strong></div>
         <div class="fact" data-reveal><span>Time</span><strong>9 AM-Noon Pacific</strong></div>
-        <div class="fact" data-reveal><span>Format</span><strong>Live online via Zoom</strong></div>
+        <a class="fact" data-reveal href="https://uidaho.zoom.us/j/88930109335" target="_blank" rel="noopener" title="Join Zoom Meeting - ID: 889 3010 9335, Passcode: 960232"><span>Format</span><strong>Live online via Zoom</strong><em class="fact-note">Meeting ID: 889 3010 9335 &middot; Passcode: 960232</em></a>
         <div class="fact" data-reveal><span>Sessions</span><strong>Repeating, choose one day</strong></div>
       </div>
     </section>
