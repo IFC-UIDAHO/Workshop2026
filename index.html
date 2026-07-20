@@ -668,6 +668,29 @@
       background: var(--gold);
       box-shadow: 0 0 20px rgba(241, 179, 0, .5);
     }
+    .manual-thumb {
+      flex: 0 0 auto;
+      width: 46px;
+      height: 62px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid rgba(214, 230, 190, .3);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .3);
+    }
+    .soon-badge {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 9px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-style: normal;
+      color: #07150f;
+      background: var(--gold);
+      border-radius: 999px;
+      vertical-align: middle;
+    }
 
     /* Improved Preview Stack */
     .preview-stack {
@@ -1181,6 +1204,13 @@
               <span>
                 <b>Your project context</b>
                 <span>Bring a workflow or area of interest from your own operations.</span>
+              </span>
+            </div>
+            <div>
+              <img class="manual-thumb" src="./assets/coverpage.png" alt="Workshop Manual cover page">
+              <span>
+                <b>Workshop Manual <em class="soon-badge">Coming soon</em></b>
+                <span>Printable step-by-step reference for all three tools. We'll add the download link here once it's ready.</span>
               </span>
             </div>
           </div>
