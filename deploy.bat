@@ -29,6 +29,12 @@ if errorlevel 1 (
 REM --- Work from the folder this .bat file lives in ---
 cd /d "%~dp0"
 
+REM --- Trust this folder (network/mapped drives don't record ownership,
+REM     which makes Git refuse to run here otherwise) ---
+git config --global --add safe.directory "%CD%"
+set "CD_FWD=%CD:\=/%"
+git config --global --add safe.directory "%CD_FWD%"
+
 if not exist "index.html" (
     echo [ERROR] Could not find index.html in this folder.
     echo          Make sure deploy.bat stays in the Workshop2026 folder.
