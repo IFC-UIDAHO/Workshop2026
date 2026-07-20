@@ -630,7 +630,7 @@
       box-shadow: var(--shadow);
       overflow: hidden;
     }
-    .panel.copy { padding: 30px; }
+    .panel.copy { padding: 30px; display: flex; flex-direction: column; }
     .panel.copy h2 {
       margin: 0 0 18px;
       font-family: Sora, sans-serif;
@@ -668,15 +668,40 @@
       background: var(--gold);
       box-shadow: 0 0 20px rgba(241, 179, 0, .5);
     }
-    .manual-thumb {
-      flex: 0 0 auto;
-      width: 84px;
-      height: 112px;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 1px solid rgba(214, 230, 190, .3);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, .3);
+    .manual-card {
+      position: relative;
+      margin-top: 16px;
+      flex: 1 1 auto;
+      min-height: 220px;
+      overflow: hidden;
+      border: 1px solid rgba(214, 230, 190, .18);
+      border-radius: 15px;
+      background: rgba(0, 0, 0, .14);
     }
+    .manual-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+    .manual-caption {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 8px;
+      background: rgba(7, 21, 15, .78);
+      color: #fff;
+      backdrop-filter: blur(14px);
+    }
+    .manual-caption b { font-family: Sora, sans-serif; font-size: 14px; }
     .soon-badge {
       display: inline-block;
       margin-left: 8px;
@@ -1206,11 +1231,12 @@
                 <span>Bring a workflow or area of interest from your own operations.</span>
               </span>
             </div>
-            <div>
-              <img class="manual-thumb" src="./assets/coverpage.png" alt="Workshop Manual cover page">
-              <span>
-                <b>Workshop Manual <em class="soon-badge">Coming soon</em></b>
-              </span>
+          </div>
+          <div class="manual-card" aria-label="Workshop Manual - coming soon">
+            <img src="./assets/coverpage.png" alt="Workshop Manual cover page">
+            <div class="manual-caption">
+              <b>Workshop Manual</b>
+              <span class="soon-badge">Coming soon</span>
             </div>
           </div>
         </div>
