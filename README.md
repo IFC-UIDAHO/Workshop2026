@@ -15,8 +15,8 @@
 | Resource | Link |
 |----------|------|
 | **Registration** | [intermtnforestcoop.com/meetingsworkshops.html](https://www.intermtnforestcoop.com/meetingsworkshops.html) |
-| **SDImax Tool** | [ifc.nkn.uidaho.edu/carrying_capacity](https://ifc.nkn.uidaho.edu/carrying_capacity) |
-| **Forest Site Type** | [ifc.nkn.uidaho.edu/forest_site_type](https://ifc.nkn.uidaho.edu/forest_site_type) |
+| **SDImax Tool** | [ifc.nkn.uidaho.edu/carrying-capacity](https://ifc.nkn.uidaho.edu/carrying-capacity) |
+| **Forest Site Type** | [ifc.nkn.uidaho.edu/forest-site-type/](https://ifc.nkn.uidaho.edu/forest-site-type/) |
 | **RGT Dashboard** | [ifc.nkn.uidaho.edu/dashapp/](https://ifc.nkn.uidaho.edu/dashapp/) |
 | **IFC Website** | [intermtnforestcoop.com](https://intermtnforestcoop.com) |
 
