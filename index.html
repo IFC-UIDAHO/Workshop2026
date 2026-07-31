@@ -743,6 +743,7 @@
     /* Improved Preview Stack */
     .preview-stack {
       display: grid;
+      align-content: start;
       gap: 14px;
       padding: 14px;
       background: rgba(244, 248, 238, .08);
@@ -764,7 +765,7 @@
       transform: translateY(-4px);
       box-shadow: 0 24px 58px rgba(0, 0, 0, .34);
     }
-    .preview-card.featured { min-height: 260px; }
+    .preview-card.featured { min-height: 0; }
     .preview-card img {
       width: 100%;
       height: 100%;
@@ -776,7 +777,7 @@
     .preview-card:hover img {
       transform: scale(1.03);
     }
-    .preview-card.featured img { aspect-ratio: 16 / 9; }
+    .preview-card.featured img { aspect-ratio: 1600 / 747; height: auto; }
     .preview-caption {
       position: absolute;
       left: 14px;
