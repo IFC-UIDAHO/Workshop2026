@@ -67,6 +67,7 @@ New updates and upcoming analytical products from IFC, with a look at what's com
 | **Mark Kimsey** | Director, Intermountain Forestry Cooperative — main workshop lead |
 | **Terry Shaw** | Senior Forest Research Scientist — field interpretation & member support |
 | **Jaslam Poolakkal** | Lead Data Scientist (R&D) — tool development, spatial analytics & demos |
+| **Bidhi Paudel** | Web Developer (Student Staff) — software & full-stack development |
 
 **Contact:** [mkimsey@uidaho.edu](mailto:mkimsey@uidaho.edu) · 208-885-7520
 
