@@ -778,6 +778,68 @@
       transform: scale(1.03);
     }
     .preview-card.featured img { aspect-ratio: 1600 / 747; height: auto; }
+
+    .sneak-peek { display: grid; gap: 14px; }
+    .sneak-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 2px;
+    }
+    .sneak-chip {
+      padding: 5px 11px;
+      border: 1px solid rgba(241, 179, 0, .38);
+      border-radius: 999px;
+      background: rgba(241, 179, 0, .12);
+      color: #ffe5a5;
+      font-family: Sora, sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .sneak-sub {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .sneak-card {
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px dashed rgba(241, 179, 0, .35);
+      background: #f8fbf5;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+    }
+    .sneak-card img { display: block; width: 100%; height: auto; }
+    .sneak-card figcaption {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 8px;
+      background: rgba(7, 21, 15, .8);
+      backdrop-filter: blur(6px);
+    }
+    .sneak-card figcaption b { font-family: Sora, sans-serif; font-size: 12px; }
+    .sneak-card figcaption span {
+      color: #ffd98a;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
     .preview-caption {
       position: absolute;
       left: 14px;
@@ -1289,6 +1351,20 @@
               <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
             </div>
           </a>
+          <div class="sneak-peek" aria-label="Module 04 sneak peek previews">
+            <div class="sneak-head">
+              <span class="sneak-chip">Module 04 &middot; Sneak Peek</span>
+              <span class="sneak-sub">Upcoming analytical products</span>
+            </div>
+            <figure class="sneak-card">
+              <img src="./assets/sneak-conifer.png" alt="CONIFER Stand Structure Studio preview" loading="lazy">
+              <figcaption><b>CONIFER</b><span>Stand Structure Studio</span></figcaption>
+            </figure>
+            <figure class="sneak-card">
+              <img src="./assets/sneak-forestask.png" alt="ForestAsk forest intelligence platform preview" loading="lazy">
+              <figcaption><b>ForestAsk</b><span>Forest Intelligence</span></figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
