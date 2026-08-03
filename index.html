@@ -705,7 +705,7 @@
     }
     .manual-cover {
       position: relative;
-      flex: 1 1 auto;
+      flex: 1 1 0;
       min-height: 118px;
       overflow: hidden;
     }
@@ -784,6 +784,28 @@
       height: 15px;
       flex: 0 0 auto;
       color: var(--gold);
+    }
+    .manual-guides .resource-sub {
+      margin-left: 16px;
+      border-style: dashed;
+      border-color: rgba(214, 230, 190, .22);
+      background: rgba(0, 0, 0, .12);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .manual-guides .resource-sub:hover {
+      color: #eef4e6;
+      border-color: rgba(245, 180, 0, .5);
+    }
+    .manual-guides .resource-sub .rtag {
+      margin-right: 8px;
+      color: #ffe5a5;
+      font-family: Sora, sans-serif;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
 
     /* Improved Preview Stack */
@@ -1378,6 +1400,10 @@
               <a href="https://ifc.nkn.uidaho.edu/forest-carrying-capacity/static/user-guide/index.html" target="_blank" rel="noopener">
                 <span>SDImax &mdash; Forest Carrying Capacity</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a class="resource-sub" href="https://vandalsuidaho-my.sharepoint.com/:f:/g/personal/mkimsey_uidaho_edu/IgD4q5WLqwugTKxZdBScKwN3AZSBmZj8Z7d4_Ipi2VEeeJ8?e=Zekk0a" target="_blank" rel="noopener">
+                <span><span class="rtag">Resource</span>Demo shapefiles for SDImax</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg>
               </a>
               <a href="https://ifc.nkn.uidaho.edu/forest-site-type/user-guide/index.html" target="_blank" rel="noopener">
                 <span>Forest Site Type</span>
