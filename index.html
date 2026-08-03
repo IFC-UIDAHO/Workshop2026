@@ -695,40 +695,33 @@
       position: relative;
       margin-top: 16px;
       flex: 1 1 auto;
-      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
       overflow: hidden;
       border: 1px solid rgba(214, 230, 190, .18);
       border-radius: 15px;
       background: rgba(0, 0, 0, .14);
     }
-    .manual-card img {
+    .manual-cover {
+      position: relative;
+      flex: 1 1 auto;
+      min-height: 118px;
+      overflow: hidden;
+    }
+    .manual-cover img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: top center;
     }
-    .manual-caption {
-      position: absolute;
-      left: 14px;
-      right: 14px;
-      bottom: 14px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 14px;
-      border: 1px solid rgba(255, 255, 255, .24);
-      border-radius: 8px;
-      background: rgba(7, 21, 15, .78);
-      color: #fff;
-      backdrop-filter: blur(14px);
-    }
-    .manual-caption b { font-family: Sora, sans-serif; font-size: 14px; }
     .soon-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
       display: inline-block;
-      margin-left: 8px;
-      padding: 2px 9px;
+      padding: 4px 10px;
       font-size: 10px;
       font-weight: 800;
       letter-spacing: .08em;
@@ -737,7 +730,60 @@
       color: #07150f;
       background: var(--gold);
       border-radius: 999px;
-      vertical-align: middle;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .3);
+    }
+    .manual-guides {
+      flex: 0 0 auto;
+      display: grid;
+      gap: 8px;
+      padding: 14px;
+      border-top: 1px solid rgba(214, 230, 190, .14);
+      background: rgba(7, 21, 15, .5);
+    }
+    .manual-guides-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 2px;
+      font-family: Sora, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #ffe5a5;
+    }
+    .manual-guides-head span {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: .05em;
+      text-transform: none;
+    }
+    .manual-guides a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid rgba(214, 230, 190, .16);
+      border-radius: 10px;
+      background: rgba(0, 0, 0, .2);
+      color: #eef4e6;
+      font-size: 13px;
+      font-weight: 600;
+      transition: border-color .2s ease, background .2s ease, transform .2s ease;
+    }
+    .manual-guides a:hover {
+      border-color: rgba(245, 180, 0, .5);
+      background: rgba(245, 180, 0, .08);
+      transform: translateX(3px);
+    }
+    .manual-guides a svg {
+      width: 15px;
+      height: 15px;
+      flex: 0 0 auto;
+      color: var(--gold);
     }
 
     /* Improved Preview Stack */
@@ -1323,11 +1369,25 @@
               </span>
             </div>
           </div>
-          <div class="manual-card" aria-label="Workshop Manual - coming soon">
-            <img src="./assets/coverpage.png" alt="Workshop Manual cover page">
-            <div class="manual-caption">
-              <b>Workshop Manual</b>
-              <span class="soon-badge">Coming soon</span>
+          <div class="manual-card" aria-label="Workshop manual and tool user guides">
+            <div class="manual-cover">
+              <img src="./assets/coverpage.png" alt="IFC Workshop Manual cover">
+              <span class="soon-badge">Full manual &middot; coming soon</span>
+            </div>
+            <div class="manual-guides">
+              <div class="manual-guides-head">User Guides<span>opens in new tab</span></div>
+              <a href="https://ifc.nkn.uidaho.edu/forest-carrying-capacity/static/user-guide/index.html" target="_blank" rel="noopener">
+                <span>SDImax &mdash; Forest Carrying Capacity</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://ifc.nkn.uidaho.edu/forest-site-type/user-guide/index.html" target="_blank" rel="noopener">
+                <span>Forest Site Type</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://ifc.nkn.uidaho.edu/assets/RGT_User_Manual.html" target="_blank" rel="noopener">
+                <span>RGT &mdash; Realized Genetic Gain Trials</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
             </div>
           </div>
         </div>
